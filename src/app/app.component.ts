@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataServiceService } from './service/data-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reserva-de-vuelos';
+
+  constructor(private dataService: DataServiceService){
+    this.dataService.getVuelos().subscribe(resp=>{console.log(resp)})
+  }
+
+
+
 }

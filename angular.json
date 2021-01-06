@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "reserva-de-vuelos"
+  "defaultProject": "reserva-de-vuelos",
+  "cli": {
+    "analytics": false
+  }
 }
